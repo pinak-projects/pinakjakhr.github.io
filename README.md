@@ -1,2 +1,0 @@
-# pinakjakhr.github.io
-MIME
