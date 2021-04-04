@@ -1,9 +1,4 @@
-const http = require('http')
-const fs = require('fs')
-
-const server = http.createServer((req, res) => {
-  res.writeHead(200, { 'content-type': 'application/octet-stream' })
-  fs.createReadStream('index.html').pipe(res)
-})
-
+var express = require('express');
+var server = express();
+server.use(express.static(__dirname));
 server.listen(process.env.PORT || 3000)
